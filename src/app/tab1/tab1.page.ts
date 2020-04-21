@@ -11,6 +11,7 @@ export class Tab1Page {
   calcInterval: any;
   plugged = false;
   static unitPrice = 10;
+  static Unitrange = "61-90";
   cost = 0;
   
   constructor() { }
@@ -28,7 +29,11 @@ export class Tab1Page {
 
   }
 
-  
+  get UnitrangeNow(){
+    return Tab1Page.Unitrange;
+  }
+
+
   setTrue() {
     this.plugged = !this.plugged;
   }

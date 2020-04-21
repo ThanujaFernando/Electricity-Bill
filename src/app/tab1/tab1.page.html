@@ -16,9 +16,10 @@
   <ion-input type="number" [(ngModel)]="Watt"></ion-input>
   
   <ion-button color="primary" (click)="onClickMe(Watt)">send value</ion-button><br><br>
+  <ion-label>Plugged status: </ion-label>
   {{plugged}}<br><br>
-  <ion-button color="primary" (click)="setTrue()">Plugged</ion-button><br><br>
-
+  <ion-button color="primary" (click)="setTrue()">Set TRUE/FALSE</ion-button><br><br>
+  <ion-label>Selected Unit Range: </ion-label>{{UnitrangeNow}}<br>
   <ion-button color="primary" [routerLink]="['/tabs/tab2']">Change unit range</ion-button><br><br>
 
   Rs.{{cost}}
