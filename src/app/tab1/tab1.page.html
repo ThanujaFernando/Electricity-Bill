@@ -12,18 +12,15 @@
       <ion-title size="large">Electricity Bill</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-grid>
-    <ion-row><ion-col>
-    <input value="0" type="number" [(ngModel)]="Watt"></ion-col><ion-col>
-    <ion-button color="primary" (click)="onClickMe(Watt)">send value</ion-button></ion-col>
-  </ion-row>
-  <ion-row><ion-col>
-    <ion-button color="primary" (click)="setTrue()">Plugged</ion-button>
+  <ion-label>Watt amount</ion-label>
+  <ion-input type="number" [(ngModel)]="Watt"></ion-input>
+  
+  <ion-button color="primary" (click)="onClickMe(Watt)">send value</ion-button><br><br>
+  {{plugged}}<br><br>
+  <ion-button color="primary" (click)="setTrue()">Plugged</ion-button><br><br>
 
-    {{plugged}}
-  </ion-col>
-  </ion-row>
-    {{cost}}
-  </ion-grid>
+  <ion-button color="primary" [routerLink]="['/tabs/tab2']">Change unit range</ion-button><br><br>
+
+  Rs.{{cost}}
 
 </ion-content>
