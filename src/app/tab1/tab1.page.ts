@@ -17,6 +17,7 @@ export class Tab1Page {
   static daysIndex = 0;
   static lastDate:Date ;
   x;
+  Watt;
   
   
   constructor(private storage: Storage) { }

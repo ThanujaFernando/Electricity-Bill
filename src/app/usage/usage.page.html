@@ -5,5 +5,9 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-item>
+    <ion-label>MM DD YY</ion-label>
+    <ion-datetime name="myDate" display-format="MM DD YY" placeholder="Select Date" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+  <ion-button color="primary" (click)="getDateU()"></ion-button>
 </ion-content>

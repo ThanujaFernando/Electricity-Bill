@@ -6,12 +6,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-item>
+    <ion-label>MM DD YY</ion-label>
+    <ion-datetime name="myDate" display-format="MM DD YY" placeholder="Select Date" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+  <ion-button color="primary" (click)="getDateU()">get usage</ion-button><br>
+  <ion-label>Usage:</ion-label>
+  {{z}}
 </ion-content>
